@@ -1,0 +1,15 @@
+<label>
+  number 1:
+  <input type="number"[(ngModel)]="number1">
+</label>
+<label>
+  number 2:
+  <input type="number" [(ngModel)]="number2">
+</label>
+<p>
+  <input type="button" (click)="addition()" value="+">
+  <input type="button" (click)="subtraction()" value="-">
+  <input type="button" (click)="multiplication()" value="x">
+  <input type="button" (click)="division()" value="/">
+</p>
+<h3>result: {{result}}</h3>
