@@ -1,0 +1,49 @@
+<div class="container">
+  <form [formGroup]="userFrom" (ngSubmit)="createUser()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+             formControlName="email">
+      <div id="emailHelp" class="form-text"
+           *ngIf="userFrom.controls.email.hasError('minlength') && userFrom.controls.email.dirty" style="color: red">min
+        > 5
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Country</label>
+      <input type="text" class="form-control" id="" formControlName="country">
+      <div *ngIf="userFrom.controls.country.hasError('required') && userFrom.controls.country.dirty" style="color: red">ko dc rong</div>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Age</label>
+      <input type="text" class="form-control"  formControlName="age">
+      <div *ngIf="userFrom.controls.age.hasError('min') && userFrom.controls.age.dirty" style="color: red">age > 18</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="" class="form-label">Gender</label><br>
+      Male <input type="radio" class="" name="gender" formControlName="gender" value="0">
+      Female <input type="radio" class="" name="gender" formControlName="gender" value="1">
+      LGBT <input type="radio" class="" name="gender" formControlName="gender" value="2">
+    </div>
+
+    <div class="mb-3">
+      <label for="" class="form-label">Phone</label>
+      <input type="text" class="form-control"  formControlName="phone">
+      <div *ngIf="userFrom.controls.phone.hasError('pattern') && userFrom.controls.phone.dirty">nhap phone dung
+        dinh dang
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Password</label>
+      <input type="text" class="form-control" formControlName="password">
+      <div *ngIf="userFrom.controls.password.hasError('minlength') && userFrom.controls.password.dirty">pass > 5</div>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">ConfirmPassword</label>
+      <input type="text" class="form-control"  formControlName="confirmPassword">
+      <div *ngIf="userFrom.controls.confirmPassword.hasError('minlength') && userFrom.controls.confirmPassword.dirty"> pass > 5</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
