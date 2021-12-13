@@ -18,6 +18,8 @@ import { EmployeeEditComponent } from './employee/employee-edit/employee-edit.co
 import { HomeComponent } from './home/home.component';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import { EmployeeDeleteComponent } from './employee/employee-delete/employee-delete.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 
 
@@ -37,6 +39,7 @@ import { EmployeeDeleteComponent } from './employee/employee-delete/employee-del
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

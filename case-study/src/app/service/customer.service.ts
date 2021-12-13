@@ -27,10 +27,10 @@ export class CustomerService {
   }
 
   edit(id: number, customer: ICustomer): Observable<ICustomer | any> {
-    return this.http.patch(`${this.URL_CUSTOMER}/${id}`, customer);
+    return this.http.patch(this.URL_CUSTOMER + '/'+id, customer);
   }
 
-  deleteCustomer(id: ICustomer) {
+  delete(id: any): Observable<ICustomer | any> {
     return this.http.delete(this.URL_CUSTOMER + '/' + id);
   }
 

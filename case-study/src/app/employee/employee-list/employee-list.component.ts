@@ -6,6 +6,8 @@ import {DivisionService} from '../../service/division.service';
 import {EducationDegreeService} from '../../service/education-degree.service';
 import {EmployeeService} from '../../service/employee.service';
 import {PositionService} from '../../service/position.service';
+import {EmployeeDeleteComponent} from '../employee-delete/employee-delete.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-employee-list',
@@ -30,6 +32,7 @@ export class EmployeeListComponent implements OnInit {
     private eduDegreeService: EducationDegreeService,
     private employeeService: EmployeeService,
     private positionService: PositionService,
+    private matDialog: MatDialog
   ) {
   }
 
@@ -77,4 +80,24 @@ export class EmployeeListComponent implements OnInit {
     });
   }
 
+  opeDialog(id,name): void {
+    const dialogRef = this.matDialog.open(EmployeeDeleteComponent, {
+      width: '500px',
+      data: {name: name,
+        id: id
+      },
+    });
+    dialogRef.afterClosed().subscribe(result => {
+
+      if(result == 'true'){
+        this.employeeService.delete(id).subscribe();
+        window.location.reload();
+      }
+      console.log('The dialog was closed');
+
+    });
+  }
+
 }
+
+

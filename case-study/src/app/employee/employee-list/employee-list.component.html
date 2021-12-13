@@ -46,7 +46,7 @@
       <td>{{employees.email}}</td>
       <td>{{employees.address}}</td>
       <td>
-        <button class="btn btn-danger">delete</button>
+        <button class="btn btn-danger" (click)=opeDialog(employees.id,employees.name)>delete</button>
       </td>
       <td>
         <button [routerLink]="['/employee-edit/'+employees.id]" class="btn btn-warning">Edit</button>

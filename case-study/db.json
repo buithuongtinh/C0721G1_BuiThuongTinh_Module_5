@@ -53,36 +53,6 @@
       }
     },
     {
-      "id": 4,
-      "code": "KH-5555",
-      "name": "Nguyễn Tiến Luật",
-      "dayOfBirth": "1995-10-05",
-      "gender": "0",
-      "idCard": "12465870000",
-      "phone": "0913338888",
-      "email": "nhat@gmail.com",
-      "address": "28 Phan Anh",
-      "customerType": {
-        "id": 3,
-        "name": "Gold"
-      }
-    },
-    {
-      "id": 5,
-      "code": "DV-5555",
-      "name": "Nguyễn Tiến Luật",
-      "dayOfBirth": "",
-      "gender": "",
-      "idCard": "",
-      "phone": "0913338888",
-      "email": "nhat@gmail.com",
-      "address": "28 Phan Anh",
-      "customerType": {
-        "id": 2,
-        "name": "Platinum"
-      }
-    },
-    {
       "id": 6,
       "code": "DV-000",
       "name": "NAAA",
@@ -156,21 +126,6 @@
         "id": 3,
         "name": "Gold"
       }
-    },
-    {
-      "code": "KH-4444",
-      "name": "Bùi Thường Tính",
-      "dayOfBirth": "2000-12-10",
-      "gender": "0",
-      "idCard": "22",
-      "phone": 799596322,
-      "email": "tinh@gmail.com",
-      "address": "ww",
-      "customerType": {
-        "id": 1,
-        "name": "Diamond"
-      },
-      "id": 13
     },
     {
       "code": "KH-4444",
@@ -338,116 +293,6 @@
   ],
   "employees": [
     {
-      "id": 1,
-      "name": "Lê Thành Trung",
-      "dayOfBirth": "1997-01-11",
-      "salary": 700,
-      "idCard": "12465870000",
-      "phone": "0913338888",
-      "email": "nhat@gmail.com",
-      "address": "28 lê lợi",
-      "division": {
-        "id": 4,
-        "name": "Quản lý"
-      },
-      "position": {
-        "id": 4,
-        "name": "Giám sát"
-      },
-      "eduDegree": {
-        "id": 4,
-        "name": "Sau đại học"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Trần Thị Hạnh",
-      "dayOfBirth": "1993-12-22",
-      "idCard": "12465870000",
-      "phone": "0913338888",
-      "email": "nhat@gmail.com",
-      "address": "28 Phan Anh",
-      "salary": "900",
-      "division": {
-        "id": 4,
-        "name": "Quản lý"
-      },
-      "position": {
-        "id": 3,
-        "name": "Chuyên viên"
-      },
-      "eduDegree": {
-        "id": 3,
-        "name": "Đại học"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Thái Linh Hương",
-      "dayOfBirth": "1986-01-04",
-      "idCard": "12465870000",
-      "phone": "0913338888",
-      "email": "nhat@gmail.com",
-      "address": "28 cao lãnh",
-      "salary": "999",
-      "division": {
-        "id": 3,
-        "name": "Phục vụ"
-      },
-      "position": {
-        "id": 4,
-        "name": "Giám sát"
-      },
-      "eduDegree": {
-        "id": 3,
-        "name": "Đại học"
-      }
-    },
-    {
-      "id": 5,
-      "name": "Bùi Thường Tính",
-      "dayOfBirth": "2010-11-11",
-      "idCard": "222222222",
-      "phone": "0909596322",
-      "email": "tinh2000@gmail.com",
-      "address": "ggg",
-      "salary": "5555555",
-      "division": {
-        "id": 2,
-        "name": "Hành Chính"
-      },
-      "position": {
-        "id": 3,
-        "name": "Chuyên viên"
-      },
-      "eduDegree": {
-        "id": 1,
-        "name": "Trung cấp"
-      }
-    },
-    {
-      "id": 6,
-      "name": "Bùi Thường Tính",
-      "dayOfBirth": "2001-12-11",
-      "idCard": "223333333",
-      "phone": "0909596322",
-      "email": "buithuongtinh2000@gmail.com",
-      "address": "ggggtttt",
-      "salary": "5553353",
-      "division": {
-        "id": 2,
-        "name": "Hành Chính"
-      },
-      "position": {
-        "id": 3,
-        "name": "Chuyên viên"
-      },
-      "eduDegree": {
-        "id": 2,
-        "name": "Cao đẳng"
-      }
-    },
-    {
       "id": 7,
       "name": "Thái Thùy Hương",
       "dayOfBirth": "2000-02-02",
@@ -467,6 +312,72 @@
       "eduDegree": {
         "id": 1,
         "name": "Trung cấp"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Thường Tính",
+      "dayOfBirth": "2010-11-11",
+      "idCard": "2222222222",
+      "phone": "0909596322",
+      "email": "thuongtinh2000@gmail.com",
+      "address": "282",
+      "salary": "700",
+      "division": {
+        "id": 2,
+        "name": "Hành Chính"
+      },
+      "position": {
+        "id": 2,
+        "name": "Phục vụ"
+      },
+      "eduDegree": {
+        "id": 2,
+        "name": "Cao đẳng"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Bảo",
+      "dayOfBirth": "2001-12-12",
+      "idCard": "12487020011",
+      "phone": "0909596111",
+      "email": "nhat@gmail.com",
+      "address": "Hà Nội",
+      "salary": "200000",
+      "division": {
+        "id": 2,
+        "name": "Hành Chính"
+      },
+      "position": {
+        "id": 3,
+        "name": "Chuyên viên"
+      },
+      "eduDegree": {
+        "id": 2,
+        "name": "Cao đẳng"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Thanh Thanh",
+      "dayOfBirth": "2001-01-01",
+      "idCard": "2222222222",
+      "phone": "0909596111",
+      "email": "thanh@gmail.com",
+      "address": "Sài Gòn",
+      "salary": "1200000",
+      "division": {
+        "id": 2,
+        "name": "Hành Chính"
+      },
+      "position": {
+        "id": 3,
+        "name": "Chuyên viên"
+      },
+      "eduDegree": {
+        "id": 2,
+        "name": "Cao đẳng"
       }
     }
   ]

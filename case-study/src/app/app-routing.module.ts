@@ -8,6 +8,8 @@ import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import {EmployeeCreateComponent} from './employee/employee-create/employee-create.component';
 import {EmployeeEditComponent} from './employee/employee-edit/employee-edit.component';
 import {CustomerEditComponent} from './customers/customer-edit/customer-edit.component';
+import {EmployeeDeleteComponent} from './employee/employee-delete/employee-delete.component';
+import {CustomerDeleteComponent} from './customers/customer-delete/customer-delete.component';
 
 
 
@@ -16,9 +18,10 @@ const routes: Routes = [
   {path: 'employee-list', component: EmployeeListComponent },
   {path: 'employee-create', component: EmployeeCreateComponent},
   {path: 'employee-edit/:id', component: EmployeeEditComponent},
-  {path: 'employee-delete/:id', component: EmployeeEditComponent},
+  {path: 'employee-delete/:id', component: EmployeeDeleteComponent},
   {path: 'customer', component: CustomerListComponent},
   {path: 'customer-edit/:id', component: CustomerEditComponent},
+  {path: 'customer-delete/:id', component: CustomerDeleteComponent},
   {path: 'create', component: CustomerCreateComponent}
   ];
 

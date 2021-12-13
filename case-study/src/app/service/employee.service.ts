@@ -22,14 +22,15 @@ export class EmployeeService {
   }
 
   findById(id: number): Observable<Employee | any> {
-    return this.http.get(`${this.API_URL}/${id}`);
+    return this.http.get(this.API_URL+'/'+id);
   }
 
   edit(id: number, object: Employee): Observable<Employee | any> {
-    return this.http.patch(`${this.API_URL}/${id}`, object);
+    return this.http.patch(this.API_URL+'/'+id,object);
   }
 
-  delete(id: number): Observable<Employee | any> {
-    return this.http.delete(`${this.API_URL}/${id}`);
+  delete(id: number | any): Observable<Employee | any> {
+    return this.http.delete(this.API_URL+'/'+id);
   }
+
 }
