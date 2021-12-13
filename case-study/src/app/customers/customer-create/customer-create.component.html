@@ -1,0 +1,83 @@
+
+<form [formGroup]="customerForm">
+  <div class="mb-3">
+    <label for="codeCustomer" class="form-label">Code Customer</label>
+    <input type="text" class="form-control" id="codeCustomer" formControlName="code">
+<!--    <div class="errors" *ngFor="let errors of validationMessage.customer_code">-->
+<!--      <ng-template [ngIf]="customerForm.get('customer_code').hasError(errors.type) && customerForm.get('customer_code').dirty">-->
+<!--        {{errors.message}}-->
+<!--      </ng-template>-->
+    </div>
+<!--  </div>-->
+
+  <div class="mb-3">
+    <label for="nameCustomer" class="form-label">Name Customer</label>
+    <input type="text" class="form-control" id="nameCustomer" formControlName="name">
+<!--    <div *ngIf="customerForm.get('name').hasError('required') && customerForm.get('name').dirty">Nhap ten cho customer</div>-->
+  </div>
+
+  <div class="mb-3">
+    <label for="birthdayCustomer" class="form-label">Birthday Customer</label>
+    <input type="date" class="form-control" id="birthdayCustomer" formControlName="dayOfBirth">
+<!--    <div *ngIf="customerForm.get('dayOfBirth').hasError('required') && customerForm.get('dayOfBirth').dirty">Nhap birthday cho Khach hang nay</div>-->
+  </div>
+
+  <div class="mb-3">
+    <label for="genderCustomer">Gender Customer</label>
+    <select id="genderCustomer" class="form-select" formControlName="gender">
+      <option value="0">Male</option>
+      <option value="1">FeMale</option>
+      <option value="2">LGBT</option>
+    </select>
+<!--    <div *ngIf="customerForm.get('gender').hasError('required') && customerForm.get('gender').dirty">Nhap gioi tinh cho khahc hang nay</div>-->
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="idCard">IdCard Customer</label>
+    <input type="text" class="form-control" id="idCard" formControlName="idCard">
+<!--    <div class="errors" *ngFor="let errors of validationMessage.customer_idCard">-->
+<!--      <ng-template [ngIf]="customerForm.get('customer_idCard').hasError(errors.type) && customerForm.get('customer_idCard').dirty">-->
+<!--        {{errors.message}}-->
+<!--      </ng-template>-->
+<!--    </div>-->
+
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="phoneCustomer">Phone Customer</label>
+    <input type="number" class="form-control" id="phoneCustomer" formControlName="phone">
+<!--    <div class="errors" *ngFor="let errors of validationMessage.customer_phone">-->
+<!--      <ng-template [ngIf]="customerForm.get('customer_phone').hasError(errors.type) && customerForm.get('customer_phone').dirty">-->
+<!--        {{errors.message}}-->
+<!--      </ng-template>-->
+    </div>
+
+<!--  </div>-->
+
+  <div class="mb-3">
+    <label class="form-label" for="emailCustomer">Email Customer</label>
+    <input type="email" class="form-control" id="emailCustomer" formControlName="email">
+<!--    <div class="errors" *ngFor="let errors of validationMessage.customer_email">-->
+<!--      <ng-template [ngIf]="customerForm.get('customer_email').hasError(errors.type) && customerForm.get('customer_email').dirty">-->
+<!--        {{errors.message}}-->
+<!--      </ng-template>-->
+<!--    </div>-->
+
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="addressCustomer">Address Customer</label>
+    <input type="text" class="form-control" id="addressCustomer" formControlName="address">
+<!--    <div *ngIf="customerForm.get('customer_address').hasError('required') && customerForm.get('customer_address').dirty">Nhap dia chi cho khach hang nay</div>-->
+  </div>
+
+  <div class="mb-3">
+    <label for="customerType">Customer Type</label>
+    <select id="customerType" class="form-select" formControlName="customerType">
+      <option *ngFor="let items of list" [ngValue]="items">{{items.name}}</option>
+    </select>
+<!--    <div *ngIf="customerForm.get('customer_type').hasError('required') && customerForm.get('customer_type').dirty">Nhap loai khach cho khach hang nay</div>-->
+  </div>
+
+    <button type="submit" (click)="onCreate()">Create</button>
+</form>

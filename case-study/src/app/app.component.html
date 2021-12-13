@@ -1,0 +1,66 @@
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkgreen;">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">Furama Resort</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 90px">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/employee-list">Employee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/customer">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contract">Contract</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container-fluid"
+     style="min-height: 90vh; background: aliceblue">
+  <div class="row">
+    <div class="col-lg-2">
+      <ul class="list-group">
+        <li class="list-group-item active" aria-current="true">Home</li>
+        <li class="list-group-item">Quản lý nhân viên</li>
+        <li class="list-group-item">Quản lý khách hàng</li>
+        <li class="list-group-item">Quản lý dịch vụ </li>
+        <li class="list-group-item">Quản lý hợp đồng</li>
+      </ul>
+    </div>
+    <div class="col-lg-10 p-0 overflow-scroll ">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <div class="container-fluid" style="background-color: darkgreen; color: white; padding-top: 10px">
+      <div style="text-align: center">
+        <h4>Liên hệ</h4>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+               class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+          103 - 105 Vo Nguyen Giap Street, Khue My Ward, Ngu Hanh Son District, Danang City, Vietnam<br>
+          Tel.: 84-236-3847 333/888 * Fax: 84-236-3847 666<br>
+          Email: reservation@furamavietnam.com *
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+

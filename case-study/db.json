@@ -1,0 +1,473 @@
+{
+  "customerTypes": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "customerList": [
+    {
+      "id": 1,
+      "code": "KH-0001",
+      "name": "Nguyễn Tiến Lộc",
+      "dayOfBirth": "1991-11-11",
+      "gender": "0",
+      "idCard": "11122233344",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "customerType": {
+        "id": "3",
+        "name": "Gold"
+      }
+    },
+    {
+      "id": 2,
+      "code": "KH-0002",
+      "name": "Lê Nhật Hạ",
+      "dayOfBirth": "1989-01-01",
+      "gender": false,
+      "idCard": "11122143344",
+      "phone": "0901021345",
+      "email": "nhattan@gmail.com",
+      "address": "Quảng Bình",
+      "customerType": {
+        "id": "5",
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 4,
+      "code": "KH-5555",
+      "name": "Nguyễn Tiến Luật",
+      "dayOfBirth": "1995-10-05",
+      "gender": "0",
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "id": 5,
+      "code": "DV-5555",
+      "name": "Nguyễn Tiến Luật",
+      "dayOfBirth": "",
+      "gender": "",
+      "idCard": "",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 6,
+      "code": "DV-000",
+      "name": "NAAA",
+      "dayOfBirth": "2021-10-07",
+      "gender": "0",
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 9,
+      "code": "KH-0001",
+      "name": "Nguyễn Tiến Thành",
+      "dayOfBirth": "1997-01-11",
+      "gender": "1",
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      }
+    },
+    {
+      "id": 10,
+      "code": "KH-0006",
+      "name": "Phương Linh",
+      "dayOfBirth": "1991-11-11",
+      "gender": "1",
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 11,
+      "code": "KH-0001",
+      "name": "Nguyễn Tiến Luật",
+      "dayOfBirth": "1993-11-11",
+      "gender": "0",
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 12,
+      "code": "KH-0001",
+      "name": "Pham Thanh Thuy",
+      "dayOfBirth": "1993-12-22",
+      "gender": "1",
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "code": "KH-4444",
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "2000-12-10",
+      "gender": "0",
+      "idCard": "22",
+      "phone": 799596322,
+      "email": "tinh@gmail.com",
+      "address": "ww",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "id": 13
+    },
+    {
+      "code": "KH-4444",
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "2000-11-23",
+      "gender": "0",
+      "idCard": "22",
+      "phone": 799596322,
+      "email": "bao@gmail.com",
+      "address": "28",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "id": 14
+    },
+    {
+      "code": "KH-4444",
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "0007-04-23",
+      "gender": "1",
+      "idCard": "22",
+      "phone": 799596322,
+      "email": "tinwh@gmail.com",
+      "address": "28",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "id": 15
+    },
+    {
+      "code": "KH-4444",
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "2000-11-23",
+      "gender": "1",
+      "idCard": "22",
+      "phone": 799596322,
+      "email": "tinh@gmail.com",
+      "address": "28",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "id": 16
+    },
+    {
+      "code": "KH-4444",
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "2000-11-23",
+      "gender": "1",
+      "idCard": "22",
+      "phone": 799596322,
+      "email": "tinwh@gmail.com",
+      "address": "28",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "id": 17
+    },
+    {
+      "code": "KH-4433",
+      "name": "Bùi T4 Tính",
+      "dayOfBirth": "20001-02-22",
+      "gender": "1",
+      "idCard": "22",
+      "phone": 799596322,
+      "email": "tinweh@gmail.com",
+      "address": "êgg",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "id": 18
+    },
+    {
+      "code": "KH-4433",
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "2011-11-11",
+      "gender": "1",
+      "idCard": "22",
+      "phone": 799596322,
+      "email": "tinwh@gmail.com",
+      "address": "28",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "id": 19
+    },
+    {
+      "code": "KH-4223",
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "2000-12-21",
+      "gender": "2",
+      "idCard": "22",
+      "phone": 799596322,
+      "email": "tinh@gmail.com",
+      "address": "ggg",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "id": 20
+    }
+  ],
+  "division": [
+    {
+      "id": 1,
+      "name": "Sale – Marketing"
+    },
+    {
+      "id": 2,
+      "name": "Hành Chính"
+    },
+    {
+      "id": 3,
+      "name": "Phục vụ"
+    },
+    {
+      "id": 4,
+      "name": "Quản lý"
+    }
+  ],
+  "position": [
+    {
+      "id": 1,
+      "name": "Lễ tân"
+    },
+    {
+      "id": 2,
+      "name": "Phục vụ"
+    },
+    {
+      "id": 3,
+      "name": "Chuyên viên"
+    },
+    {
+      "id": 4,
+      "name": "Giám sát"
+    },
+    {
+      "id": 5,
+      "name": "Giám đốc"
+    }
+  ],
+  "eduDegree": [
+    {
+      "id": 1,
+      "name": "Trung cấp"
+    },
+    {
+      "id": 2,
+      "name": "Cao đẳng"
+    },
+    {
+      "id": 3,
+      "name": "Đại học"
+    },
+    {
+      "id": 4,
+      "name": "Sau đại học"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Lê Thành Trung",
+      "dayOfBirth": "1997-01-11",
+      "salary": 700,
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 lê lợi",
+      "division": {
+        "id": 4,
+        "name": "Quản lý"
+      },
+      "position": {
+        "id": 4,
+        "name": "Giám sát"
+      },
+      "eduDegree": {
+        "id": 4,
+        "name": "Sau đại học"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Trần Thị Hạnh",
+      "dayOfBirth": "1993-12-22",
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 Phan Anh",
+      "salary": "900",
+      "division": {
+        "id": 4,
+        "name": "Quản lý"
+      },
+      "position": {
+        "id": 3,
+        "name": "Chuyên viên"
+      },
+      "eduDegree": {
+        "id": 3,
+        "name": "Đại học"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Thái Linh Hương",
+      "dayOfBirth": "1986-01-04",
+      "idCard": "12465870000",
+      "phone": "0913338888",
+      "email": "nhat@gmail.com",
+      "address": "28 cao lãnh",
+      "salary": "999",
+      "division": {
+        "id": 3,
+        "name": "Phục vụ"
+      },
+      "position": {
+        "id": 4,
+        "name": "Giám sát"
+      },
+      "eduDegree": {
+        "id": 3,
+        "name": "Đại học"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "2010-11-11",
+      "idCard": "222222222",
+      "phone": "0909596322",
+      "email": "tinh2000@gmail.com",
+      "address": "ggg",
+      "salary": "5555555",
+      "division": {
+        "id": 2,
+        "name": "Hành Chính"
+      },
+      "position": {
+        "id": 3,
+        "name": "Chuyên viên"
+      },
+      "eduDegree": {
+        "id": 1,
+        "name": "Trung cấp"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Bùi Thường Tính",
+      "dayOfBirth": "2001-12-11",
+      "idCard": "223333333",
+      "phone": "0909596322",
+      "email": "buithuongtinh2000@gmail.com",
+      "address": "ggggtttt",
+      "salary": "5553353",
+      "division": {
+        "id": 2,
+        "name": "Hành Chính"
+      },
+      "position": {
+        "id": 3,
+        "name": "Chuyên viên"
+      },
+      "eduDegree": {
+        "id": 2,
+        "name": "Cao đẳng"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Thái Thùy Hương",
+      "dayOfBirth": "2000-02-02",
+      "idCard": "122222222",
+      "phone": "0910000000",
+      "email": "huong2000@gmail.com",
+      "address": "cao bằng",
+      "salary": "1200000",
+      "division": {
+        "id": 2,
+        "name": "Hành Chính"
+      },
+      "position": {
+        "id": 2,
+        "name": "Phục vụ"
+      },
+      "eduDegree": {
+        "id": 1,
+        "name": "Trung cấp"
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+<div class="container mt-3">
+  <a routerLink="/customer">Back to List</a>
+
+  <form [formGroup]="editForm" (ngSubmit)="edit()"> <!--    th:object="${cusDtoObj}"-->
+
+    <div class="form-group">
+      <table class="w-50 m-auto">
+        <tr>
+          <td></td>
+          <td>
+            <h3 style="text-align: center;color: blue">Edit Customer</h3>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td>
+            <input class="form-control" id="name" formControlName="name"/>
+            <div class="message" *ngIf="editForm.get('name')?.errors?.required && !editForm.controls.name?.dirty">Không
+              bỏ trống trường này
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="code">Code:</label></td>
+          <td>
+            <input class="form-control" id="code" formControlName="code"/>
+            <div class="message" *ngIf="editForm.get('code')?.errors?.required && editForm.get('code').touched">
+              Không bỏ trống trường này
+            </div>
+            <div class="message" *ngIf="editForm.get('code')?.hasError('pattern') && editForm.get('code').touched">Nhập
+              code theo định dạng : 'KH-xxxx (x: 0-9)'
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dayOfBirth">Date of birth:</label></td>
+          <td>
+            <input type="date" class="form-control" id="dayOfBirth" formControlName="dayOfBirth"/>
+            <div id="dayMess" class="message"
+                 *ngIf="editForm.get('dayOfBirth')?.errors?.required && editForm.get('dayOfBirth').touched">
+              Không bỏ trống trường này
+            </div>
+            <div class="message"
+                 *ngIf="editForm.controls?.dayOfBirth?.hasError('ageInvalid') && editForm.get('dayOfBirth').touched">
+              Tuổi phải >=18
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td>
+            <input class="form-control" id="email" formControlName="email"/>
+            <div class="message" *ngIf="editForm.get('email')?.errors?.required && editForm.get('email').touched">
+              Không bỏ trống trường này
+            </div>
+            <div class="message" *ngIf="editForm.get('email')?.hasError('pattern') && editForm.get('email').touched">
+              Nhập code theo định dạng : 'email@abc.com'
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td>
+            <input class="form-control" id="address" formControlName="address"/>
+            <div class="message" *ngIf="editForm.get('email')?.errors?.required && editForm.get('email').touched">
+              Không bỏ trống trường này
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <!-- radio -->
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="gender" value="0" formControlName="gender"
+                     class="custom-control-input">
+              <label class="custom-control-label" for="gender">Nam</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="female" value="1" formControlName="gender"
+                     class="custom-control-input">
+              <label class="custom-control-label" for="female">Nữ</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="lgbt" value="2" formControlName="gender"
+                     class="custom-control-input">
+              <label class="custom-control-label" for="lgbt">LGBT</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="cusType"></label>Customer type:</td>
+          <td>
+            <select formControlName="customerType" id="cusType" class="form-control">
+              <option [value]="null" disabled>--Choose Customer Type--</option>
+              <option *ngFor="let type of cusTypeList" [ngValue]="type"
+                      [selected]="editForm.controls.customerType.value.id==type.id">{{type.name}}</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="idCard"></label>ID Card:</td>
+          <td>
+            <input class="form-control" id="idCard" formControlName="idCard"/>
+            <div class="message" *ngIf="editForm.get('idCard')?.errors?.required && editForm.get('idCard').touched">
+              Không bỏ trống trường này
+            </div>
+            <div class="message" *ngIf="editForm.get('idCard')?.hasError('pattern') && editForm.get('idCard').touched">
+              Vui lòng nhập theo định dạng: 'XXXXXXXXX' or 'XXXXXXXXX' (X: 0-9)
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="phone"></label>Phone:</td>
+          <td>
+            <input class="form-control" id="phone" formControlName="phone"/>
+            <div class="message" *ngIf="editForm.get('phone')?.errors?.required && editForm.get('phone').touched">
+              Không bỏ trống trường này
+            </div>
+            <div class="message" *ngIf="editForm.get('phone')?.hasError('pattern') && editForm.get('phone').touched">
+              Nhập theo định dạng: '090xxxxxxx' or '091xxxxxxx' or (84)+90xxxxxxx or (84)+91xxxxxxx (x: 0-9)
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit" class="btn btn-primary mt-3">Edit</button>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+  </form>
+
+</div>

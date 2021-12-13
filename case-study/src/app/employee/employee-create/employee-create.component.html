@@ -1,0 +1,138 @@
+<div class="container mt-3">
+  <a routerLink="/employee-list">Back to List</a>
+
+  <form [formGroup]="createForm" (ngSubmit)="create()">
+    <div class="form-group">
+      <table class="w-50 m-auto">
+        <tr>
+          <td></td>
+          <td>
+            <h3 style="text-align: center;color: blue">Create Employee</h3>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td>
+            <input class="form-control" id="name" formControlName="name"/>
+            <div class="message" *ngIf="createForm.get('name')?.errors?.required && createForm.controls.name?.dirty">
+              Không bỏ trống trường này
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="dayOfBirth">Date of birth:</label></td>
+          <td>
+            <input type="date" class="form-control" id="dayOfBirth" formControlName="dayOfBirth"/>
+            <div id="dayMess" class="message"
+                 *ngIf="createForm.get('dayOfBirth')?.errors?.required && createForm.get('dayOfBirth').dirty">
+              Không bỏ trống trường này
+            </div>
+            <div class="message"
+                 *ngIf="createForm.controls?.dayOfBirth?.hasError('ageInvalid') && createForm.get('dayOfBirth').touched">
+              Tuổi phải >=18
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td>
+            <input class="form-control" id="email" formControlName="email"/>
+            <div class="message" *ngIf="createForm.get('email')?.errors?.required && createForm.get('email').touched">
+              Không bỏ trống trường này
+            </div>
+            <div class="message"
+                 *ngIf="createForm.get('email')?.hasError('pattern') && createForm.get('email').touched">Nhập code theo
+              định dạng : 'email@abc.com'
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td>
+            <input class="form-control" id="address" formControlName="address"/>
+            <div class="message" *ngIf="createForm.get('email')?.errors?.required && createForm.get('email').touched">
+              Không bỏ trống trường này
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="division"></label>Division:</td>
+          <td>
+            <select formControlName="division" id="division" class="form-control">
+              <option [selected]="true" [value]="null" disabled>--Choose Division--</option>
+              <option *ngFor="let item of divisionList" [ngValue]="item">{{item.name}}</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="position"></label>Position:</td>
+          <td>
+            <select formControlName="position" id="position" class="form-control">
+              <option [selected]="true" [value]="null" disabled>--Choose Position--</option>
+              <option *ngFor="let item of positionList" [ngValue]="item">{{item.name}}</option>
+            </select>
+          </td>
+
+        </tr>
+
+        <tr>
+          <td><label for="eduDegree"></label>eduDegree:</td>
+          <td>
+            <select formControlName="eduDegree" id="eduDegree" class="form-control">
+              <option [selected]="true" [value]="null" disabled>--Choose eduDegree--</option>
+              <option *ngFor="let item of eduDegreeList" [ngValue]="item">{{item.name}}</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label for="idCard"></label>ID Card:</td>
+          <td>
+            <input class="form-control" id="idCard" formControlName="idCard"/>
+            <div class="message" *ngIf="createForm.get('idCard')?.errors?.required && createForm.get('idCard').dirty">
+              Không bỏ trống trường này
+            </div>
+            <div class="message"
+                 *ngIf="createForm.get('idCard')?.hasError('pattern') && createForm.get('idCard').dirty">Vui lòng nhập
+              theo định dạng: 'XXXXXXXXX' or 'XXXXXXXXX' (X: 0-9)
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="phone"></label>Phone:</td>
+          <td>
+            <input class="form-control" id="phone" formControlName="phone"/>
+            <div class="message" *ngIf="createForm.get('phone')?.errors?.required && createForm.get('phone').dirty">
+              Không bỏ trống trường này
+            </div>
+            <div class="message" *ngIf="createForm.get('phone')?.hasError('pattern') && createForm.get('phone').dirty">
+              Nhập theo định dạng: '090xxxxxxx' or '091xxxxxxx' or (84)+90xxxxxxx or (84)+91xxxxxxx (x: 0-9)
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="salary"></label>Salary:</td>
+          <td>
+            <input class="form-control" id="salary" formControlName="salary"/>
+            <div class="message"  *ngIf="createForm.get('salary')?.errors?.required && createForm.get('salary').dirty">
+              Không bỏ trống trường này
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit" class="btn btn-primary mt-3" [disabled]="createForm.invalid">Create</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </form>
+</div>
